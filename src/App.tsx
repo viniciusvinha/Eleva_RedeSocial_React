@@ -2,9 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './componentes/estaticos/navbar/Navbar';
 import Footer from './componentes/estaticos/footer/Footer';
-
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
+import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
+import Inicio from './paginas/inicio/Inicio';
 import './App.css';
+
 
 
 function App() {
@@ -15,13 +18,20 @@ function App() {
           <div style={{minHeight: '100vh'}}>
 
             <Route exact path='/'>
-              <Login />
+              <Inicio />
             </Route>
 
             <Route path='/login'>
               <Login />
             </Route>
 
+            <Route path='/home'>
+              <Home />
+            </Route>
+            
+            <Route path='/cadastrousuario'>
+              <CadastroUsuario />
+            </Route>
           </div>
         </Switch>
       <Footer />
