@@ -1,6 +1,7 @@
 import React from 'react';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import './Home.css';
+import logoHome from "../../assets/img/fundoeleva.png"
 
 function Home() {
     return (
@@ -17,9 +18,13 @@ function Home() {
                         <Button variant="outlined" className='botao'>Ver Postagens</Button>
                     </Box>
                 </Grid>
+
                 <Grid item xs={6} >
-                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
-                </Grid>
+                    <img src={logoHome} alt="" width="600px" height="500px" />
+                </Grid>  
+
+                
+
                 <Grid xs={12} className='postagens'>
                 </Grid>
             </Grid>
