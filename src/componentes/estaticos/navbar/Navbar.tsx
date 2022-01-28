@@ -1,47 +1,64 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import {useHistory } from 'react-router-dom'
+import useLocalStorage from 'react-use-localstorage';
+
 import './Navbar.css'
-import logo from '../../../assets/img/icone-eleva (3).png'
 function Navbar() {
+    const [token, setToken] = useLocalStorage('token');
+    let history = useHistory();
+    
+    function goLogout(){
+        setToken('')
+        alert("Usuário deslogado")
+        history.push('/login')
+    }
     return (
         <>
-            <AppBar position="static" style={{ backgroundColor: '#EBEBEB'}}>
+            <AppBar position="static">
                 <Toolbar variant="dense">
-                    <Box style={{ cursor: "pointer" }} >
-                        
-                        <img src={logo} alt="" width='60px' height='60px'/>
-
+                    <Box className='cursor'>
+                        <Typography variant="h5" color="inherit">
+                            BlogPessoal
+                        </Typography>
                     </Box>
 
                     <Box display="flex" justifyContent="start">
-                        <Box mx={1} style={{ cursor: "pointer",color: "black" }}>
-                            <Typography variant="h6" color="inherit">
-                                Home
-                            </Typography>
-                        </Box>
-                        <Box mx={1} style={{ cursor: "pointer",color: "black" }}>
-                            <Typography variant="h6" color="inherit">
-                                Postagens
-                            </Typography>
-                        </Box>
-                        <Box mx={1} style={{ cursor: "pointer",color: "black" }}>
-                            <Typography variant="h6" color="inherit">
-                                Temas
-                            </Typography>
-                        </Box>
-                        <Box mx={1} style={{ cursor: "pointer", color: "black"}}>
-                            <Typography variant="h6" color="inherit">
-                                Cadastrar tema
-                            </Typography>
-                        </Box>
-                        <Link to='/login' className='text-decorator-none'>
-                            <Box mx={1} style={{ cursor: "pointer", color: "black" }}>
+                        <Link to="/home" className="text-decorator-none">
+                            <Box mx={1} className='cursor'>
                                 <Typography variant="h6" color="inherit">
-                                    Logout
+                                    home
                                 </Typography>
                             </Box>
                         </Link>
+                        <Link to="/posts" className="text-decorator-none">
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" color="inherit">
+                                    postagens
+                                </Typography>
+                            </Box>
+                        </Link>
+                        <Link to="/temas" className="text-decorator-none">
+                        <Box mx={1} className='cursor'>
+                            <Typography variant="h6" color="inherit">
+                                temas
+                            </Typography>
+                        </Box>
+                        </Link>
+                        <Link to="/formularioTema" className="text-decorator-none">
+                        <Box mx={1} className='cursor'>
+                            <Typography variant="h6" color="inherit">
+                                cadastrar tema
+                            </Typography>
+                        </Box>
+                        </Link>
+                      
+                            <Box mx={1} className='cursor' onClick={goLogout}>
+                                <Typography variant="h6" color="inherit">
+                                    logout
+                                </Typography>
+                            </Box>
                         
                     </Box>
 
