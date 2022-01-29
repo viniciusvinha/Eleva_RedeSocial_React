@@ -1,5 +1,4 @@
 .imagem2{
-    background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -9,8 +8,11 @@
 
 .textos2{
     font-weight: bold !important;
+    color: #4A2B87 !important;
 }
 
 .btnCancelar{
-    margin-right: 20px !important;
+    margin-left: 20px !important;
+    background-color: #EBEBEB !important;
+    color: #4A2B87 !important;
 }

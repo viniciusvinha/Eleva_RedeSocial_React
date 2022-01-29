@@ -46,13 +46,13 @@ function Login() {
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center' style={{backgroundColor: "#EBEBEB"}}>
             <Grid xs={6} className='imagem'>
-                <Box marginLeft={10} marginTop={10} className='imglogin'>
+                <Box marginLeft={10} marginTop={20}>
                     <img src={require('../../assets/img/img-login.png')} alt="" width="450px" height="350px"/>
                 </Box>
             </Grid>
             <Grid alignItems='center' xs={6}>
-                    <Box marginLeft={23}>
-                        <img src={require('../../assets/img/Logo Eleva (1).png')} alt="" width="300px" height="300px"/>
+                    <Box paddingX={31} paddingBottom={10}>
+                        <img src={require('../../assets/img/Logo Completo (8).png')} alt="" width="180px" height="115px"/>
                     </Box>
                     <Box paddingX={20}>
                         <form onSubmit={onSubmit}>
