@@ -1,18 +1,17 @@
-.box1{
-    background-color: #3F51B5;
-    height: 120px;
+.footer{
+    background-color: #4A2B87;
+    height: 150px;
+
 }
 
-.box2{
-    background-color: #303F9F;
-    height: 60px;
-}
-
-.redes{
-    font-size: 60px !important;
+.textoFooter{
     color: white;
+    margin-top: 30px;
 }
 
-.textos{
-   color: white;
+.iconGit{
+    color: white;
+    margin-left: 5px;
 }
+
+
