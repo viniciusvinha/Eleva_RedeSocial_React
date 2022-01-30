@@ -1,18 +1,35 @@
-.caixa{
-    background-color: #3F51B5;
+.caixa1{
+    background-color: #EBEBEB;
+    padding: 120px;
 }
 
-.titulo{
-   color: white !important;
-   font-weight: bold !important;
+.img-inicio{
+    width:350px;
+    display: block;
+    margin: auto;
 }
 
-.botao{
-    border-color: white !important;
-    background-color: #3F51B5;
-    color: white !important;
+.caixa2{
+    background-color: #CB6CE6;
+    padding: 70px;
 }
 
-.postagens{
-    background-color: white;
+.img-sobre1{
+    width:400px;
+    height:400px;
+    margin-left: 110px;
+}
+
+.logo-sobre{
+    width: 200px;
+}
+
+.texto-sobre1{
+    color: white;
+    margin-top: 50px;
+}
+
+.titulo-sobre{
+    font-weight: bold !important;
+    color: #4A2B87 !important;
 }
