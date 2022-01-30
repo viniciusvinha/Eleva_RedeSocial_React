@@ -5,7 +5,7 @@ import './Navbar.css'
 function Navbar() {
     return (
         <>
-            <AppBar position="static">
+            <AppBar position="static"  style={{ backgroundColor: "#CB6CE6" }}>
                 <Toolbar variant="dense">
                     <Box style={{ cursor: "pointer" }} >
                         <Typography variant="h5" color="inherit">
