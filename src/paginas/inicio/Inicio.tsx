@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
-import TabPostagem from '../../componentes/postagens/tabPostagem/TabPostagem';
-import ModalPostagem from '../../componentes/postagens/modalPostagem/ModalPostagem';
 import './Inicio.css';
 import { useHistory } from 'react-router';
 import useLocalStorage from 'react-use-localstorage';
@@ -20,25 +18,33 @@ function Inicio() {
   }, [token])
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>expresse aqui os seus pensamentos e opiniões!</Typography>
+            <Grid container direction="row" justifyContent="center" alignItems="center">
+                <Grid item xs={12} className='caixa1'>
+                    <Box>
+                        <img src={require('../../assets/img/Logo Completo (9).png')} alt="" className='img-inicio' />
                     </Box>
-                    <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            <ModalPostagem />
-                        </Box>
-                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                    <Box>
+                        <Typography variant='h6' color='textPrimary' component='h3' align='center' style={{color: "#4A2B87"}}>Aqui uma frase de efeito muito legal</Typography>
+                        <Typography variant='h6' color='textPrimary' component='h3' align='center' style={{color: "#4A2B87"}}>sobre mulheres e tecnologia!</Typography>
                     </Box>
                 </Grid>
-                <Grid item xs={6} >
-                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
+                <Grid container className='caixa2'> 
+                    <Grid item xs={6}>
+                            <Box>
+                                <img src={require('../../assets/img/logo (3).png')} alt="" className='logo-sobre' />
+                            </Box>
+                            <Box className='texto-sobre1'>
+                                <Typography variant='h3'>Comunidade para mulheres compartilharem dúvidas, experiências e dicas!</Typography>
+                            </Box>
+                            <Box className='texto-sobre1'>
+                                <Typography variant='body1'>"Neque porro , consectetur, adipisci velishaust, laheuiro..."</Typography>
+                            </Box>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <img src={require('../../assets/img/img-inicio.png')} alt="" className='img-sobre1' />
+                    </Grid>
                 </Grid>
-                <Grid xs={12} className='postagens'>
-                    <TabPostagem />
-                </Grid>
+               
             </Grid>
         </>
     );
