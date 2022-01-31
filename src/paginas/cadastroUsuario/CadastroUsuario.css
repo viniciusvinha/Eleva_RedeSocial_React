@@ -1,0 +1,18 @@
+.imagem2{
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.textos2{
+    font-weight: bold !important;
+    color: #4A2B87 !important;
+}
+
+.btnCancelar{
+    margin-left: 20px !important;
+    background-color: #EBEBEB !important;
+    color: #4A2B87 !important;
+}
