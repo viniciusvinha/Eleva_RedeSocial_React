@@ -9,6 +9,19 @@
      min-height: 100vh;
      background-size: cover;
      background-position: center;
+<<<<<<< HEAD
  }
 
  
+=======
+ } 
+
+ .imagem2{
+     padding-bottom: 0%;
+ }
+
+ .padimagem{
+     padding-left: 35%;
+     padding-bottom: 14%;
+ }
+>>>>>>> vinicius

@@ -12,11 +12,7 @@ function Footer() {
             <Grid container direction="row" spacing={2} className='footer'>
                 <Grid alignItems="center" item xs={3}>
                     <Box paddingLeft={13} paddingTop={4}>
-<<<<<<< HEAD
                         <img src={require('../../../assets/img/Logo Completo (6).png')} alt="" width="110px" height="70px"/>
-=======
-                        <img src={require('../../../assets/img/Logo Completo (6).png')} alt="" width="40%" height="auto"/>
->>>>>>> vinicius
                     </Box>
                 </Grid>
                 <Grid alignItems="center" item xs={3}>
