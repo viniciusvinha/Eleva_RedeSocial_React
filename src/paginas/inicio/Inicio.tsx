@@ -2,20 +2,15 @@ import React, { useEffect } from 'react';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import './Inicio.css';
 import { useHistory } from 'react-router';
-import useLocalStorage from 'react-use-localstorage';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokensReducer';
 
 function Inicio() {
 
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
     
-    useEffect(() => {
-      if (token == "") {
-          alert("Você precisa estar logado")
-          history.push("/login")
-  
-      }
-  }, [token])
+    
+
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center">
@@ -44,7 +39,6 @@ function Inicio() {
                         <img src={require('../../assets/img/img-inicio.png')} alt="" className='img-sobre1' />
                     </Grid>
                 </Grid>
-               
             </Grid>
         </>
     );
