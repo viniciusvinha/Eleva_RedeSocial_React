@@ -61,6 +61,7 @@ function ModalPostagem () {
       <Button
         variant="outlined"
         className="btnModal"
+        style={{ backgroundColor: "#EBEBEB" }}
         onClick={handleOpen}>Nova Postagem</Button>
       <Modal
         open={open}
