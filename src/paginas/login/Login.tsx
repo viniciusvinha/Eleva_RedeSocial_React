@@ -44,18 +44,6 @@ function Login() {
     }
 
     return (
-<<<<<<< HEAD
-        <Grid container direction='row' justifyContent='center' alignItems='center' style={{backgroundColor: "#EBEBEB"}}>
-            <Grid item xs={6} className='imagem'>
-                <Box marginLeft={10} marginTop={20}>
-                    <img src={require('../../assets/img/img-login.png')} alt="" width="450px" height="350px"/>
-                </Box>
-            </Grid>
-            <Grid item alignItems='center' xs={6}>
-                    <Box paddingX={31} paddingBottom={10}>
-                        <img src={require('../../assets/img/Logo Completo (8).png')} alt="" width="180px" height="115px"/>
-                    </Box>
-=======
         <Grid container direction='row' justifyContent='center' alignItems='center' style={{ backgroundColor: "#EBEBEB" }}>
             <Grid item xs={6} className='imagem'>
                 <Box marginLeft={10} marginTop={20}>
@@ -66,39 +54,26 @@ function Login() {
                     
                         <img src={require('../../assets/img/Logo Completo (8).png')} className='padimagem' alt="" width='30%' height="auto" />
                     
->>>>>>> vinicius
                     <Box paddingX={20}>
                         <form onSubmit={onSubmit}>
                             <Typography variant='h6' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Entre com o seu Login:</Typography>
                             <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                             <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                             <Box marginTop={2} textAlign='center'>
-<<<<<<< HEAD
-                                <Button type='submit' variant='contained' color='primary' style={{backgroundColor: "#CB6CE6"}}>
-=======
                                 <Button type='submit' variant='contained' color='primary' style={{ backgroundColor: "#CB6CE6" }}>
->>>>>>> vinicius
                                     Logar
                                 </Button>
                             </Box>
                         </form>
                         <Box display='flex' justifyContent='center' marginTop={2}>
                             <Box marginRight={1}>
-<<<<<<< HEAD
-                                <Typography variant='subtitle1' gutterBottom align='center' style={{color: "#4A2B87"}}>Não tem uma conta?</Typography>
-=======
                                 <Typography variant='subtitle1' gutterBottom align='center' style={{ color: "#4A2B87" }}>Não tem uma conta?</Typography>
->>>>>>> vinicius
                             </Box>
                             <Link to='/cadastrousuario'>
                                 <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
                             </Link>
                         </Box>
-<<<<<<< HEAD
-                </Box>
-=======
                     </Box>
->>>>>>> vinicius
             </Grid>
         </Grid>
     );
