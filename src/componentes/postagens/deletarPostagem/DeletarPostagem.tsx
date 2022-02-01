@@ -6,19 +6,32 @@ import { buscaId, deleteId } from '../../../services/Service';
 import { useHistory, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import {toast} from 'react-toastify';
 
 function DeletarPostagem() {
 
   let history = useHistory();
   const { id } = useParams<{id: string}>();
+
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
   );
+
   const [post, setPosts] = useState<Postagem>()
 
   useEffect(() => {
       if (token == "") {
-          alert("Você precisa estar logado")
+        toast.error('Você previds estar logado', {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          theme: "colored",
+          progress: undefined,
+          });
+          
           history.push("/login")
   
       }
@@ -40,12 +53,21 @@ function DeletarPostagem() {
 
       function sim() {
           history.push('/posts')
-          deleteId(`/postagens/${id}`, {
+          deleteId(`/postagem/${id}`, {
             headers: {
               'Authorization': token
             }
           });
-          alert('Postagem deletada com sucesso');
+          toast.success('Postagem deletada com sucesso', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+            });
         }
       
         function nao() {
@@ -70,12 +92,12 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-              <Button  variant="contained" className="marginLeft" size='large' color="primary">
+              <Button  onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
                 Sim
               </Button>
               </Box>
               <Box>
-              <Button   variant="contained" size='large' color="secondary">
+              <Button onClick={nao} variant="contained" size='large' color="secondary">
                 Não
               </Button>
               </Box>
