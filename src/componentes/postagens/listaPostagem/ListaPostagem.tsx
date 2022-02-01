@@ -7,12 +7,11 @@ import './ListaPostagem.css';
 import { useHistory } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
   let history = useHistory();
-
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
   );
@@ -28,7 +27,7 @@ function ListaPostagem() {
         draggable: false,
         theme: "colored",
         progress: undefined,
-        });
+    });
       history.push("/login")
 
     }
@@ -65,7 +64,7 @@ function ListaPostagem() {
                   {post.texto}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.tema?.tituloTema}
+                  {post.tema?.descricao}
                 </Typography>
               </CardContent>
               <CardActions>

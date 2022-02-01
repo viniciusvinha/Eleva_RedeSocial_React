@@ -12,9 +12,11 @@ function DeletarPostagem() {
 
   let history = useHistory();
   const { id } = useParams<{id: string}>();
+
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
   );
+
   const [post, setPosts] = useState<Postagem>()
 
   useEffect(() => {
@@ -50,7 +52,7 @@ function DeletarPostagem() {
 
       function sim() {
           history.push('/posts')
-          deleteId(`/postagens/${id}`, {
+          deleteId(`/postagem/${id}`, {
             headers: {
               'Authorization': token
             }
@@ -89,12 +91,12 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-              <Button  variant="contained" className="marginLeft" size='large' color="primary">
+              <Button  onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
                 Sim
               </Button>
               </Box>
               <Box>
-              <Button   variant="contained" size='large' color="secondary">
+              <Button onClick={nao} variant="contained" size='large' color="secondary">
                 Não
               </Button>
               </Box>
