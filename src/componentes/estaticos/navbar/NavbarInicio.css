@@ -1,0 +1,53 @@
+.cursor{
+    cursor: pointer;
+    color: white;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+    
+}
+
+.botaocadastro{
+    color: '#4A2B87';
+    position: absolute;
+    width: 100px;
+    height: 32px;
+    right: 15px;
+    background: #110514;
+    border-radius: 15px;
+}
+
+.botaoentrar {
+    color: '#4A2B87';
+    position: absolute;
+    width: 100px;
+    height: 32px;
+    left: 250px;
+    background:#110514;
+    border-radius: 15px;
+}
+
+.style2{
+    color:black;
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+.style3{
+    color:black;
+    width: 100px;
+    height: 30px;
+    margin-right: 5px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.style4{
+    width: 100px;
+    height: 30px;
+    border-radius: 70px;
+    margin-left: 30px;
+}
