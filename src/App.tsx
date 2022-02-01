@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './componentes/estaticos/navbar/Navbar';
+import NavbarInicio from './componentes/estaticos/navbar/NavbarInicio';
 import Footer from './componentes/estaticos/footer/Footer';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import Home from './paginas/home/Home';
@@ -25,6 +26,7 @@ function App() {
       <ToastContainer />
     <Router>
       <Navbar />
+      <NavbarInicio />
       <Switch>
         <div style={{ minHeight: '100vh' }}>
 
