@@ -5,6 +5,7 @@ import { cadastroUsuario } from '../../services/Service';
 import { Grid, Box, Typography, Button, TextField } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './CadastroUsuario.css';
+import {toast} from 'react-toastify';
 
 function CadastroUsuario() {
 
@@ -50,18 +51,36 @@ function CadastroUsuario() {
         e.preventDefault()
         if(confirmarSenha == user.senha){
         cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
-        alert('Usuario cadastrado com sucesso')
+        toast.success('Usuario cadastrado com sucesso!', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+            });
         }else{
-            alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
+            toast.error('Dadis inconsistentes. Favor verificar as informações de cadastro', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+                });
         }
     }
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center' style={{backgroundColor: "#EBEBEB"}}>
+        <Grid container direction='row' justifyContent='center' alignItems='center'style={{backgroundColor: "#EBEBEB"}}>
             <Grid item xs={6} alignItems='center'>
                 <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h6' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastrar</Typography>
-                        <Typography variant='subtitle1' gutterBottom color='textPrimary' component='h3' align='center' style={{color: "#4A2B87"}}>Crie aqui o seu perfil!</Typography>
+                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastrar</Typography>
+                        <Typography variant='h6' gutterBottom color='textPrimary' component='h2' align='center' style={{color: "#4A2B87"}}>Crie aqui o seu perfil!</Typography>
                         <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='nome' variant='outlined' name='nome' margin='normal' fullWidth />
                         <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal'fullWidth />
                         <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
@@ -81,7 +100,7 @@ function CadastroUsuario() {
             </Grid>
             <Grid item xs={6} className='imagem2'>
                 <Box marginLeft={23} marginTop={23}>
-                    <img src={require('../../assets/img/Logo Completo (9).png')} alt="" width="315px" height="205px"/>
+                    <img src={require('../../assets/img/Logo Completo (9).png')} alt="" width="70%" height="auto"/>
                 </Box>
                 <Typography variant='h6' gutterBottom color='textPrimary' component='h3' align='center' style={{color: "#4A2B87"}}>Aqui uma frase de efeito muito</Typography>
                 <Typography variant='h6' gutterBottom color='textPrimary' component='h3' align='center' style={{color: "#4A2B87"}}>legal sobre mulheres e tecnologia!</Typography>
