@@ -31,7 +31,6 @@ function DeletarPostagem() {
           theme: "colored",
           progress: undefined,
           });
-          
           history.push("/login")
   
       }

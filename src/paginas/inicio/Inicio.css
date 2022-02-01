@@ -4,9 +4,14 @@
 }
 
 .img-inicio{
-    width:350px;
+    width:30%;
+    height: auto;
     display: block;
     margin: auto;
+}
+
+.paddingTop2{
+    padding-top: 2%;
 }
 
 .caixa2{
@@ -32,4 +37,36 @@
 .titulo-sobre{
     font-weight: bold !important;
     color: #4A2B87 !important;
+}
+
+.caixa3{
+    background-color: #EBEBEB;
+    padding: 40px;
+}
+
+.padding{
+    padding: 30px;
+}
+
+.caixa4{
+    background-color: #CB6CE6;
+    padding: 20px;
+}
+
+.titulo-equipe{
+    font-weight: bold !important;
+    color: white;
+    margin: auto;
+}
+
+.logo-equipe{
+    width: 50%;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.box-equipe{
+    display: flex; 
+    align-items:center;
+    margin: auto;
 }
