@@ -15,11 +15,11 @@ function Inicio() {
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={12} className='caixa1'>
                     <Box>
-                        <img src={require('../../assets/img/Logo Completo (9).png')} alt="" className='img-inicio' />
+                        <img src={require('../../assets/img/Logo Completo (5).png')} alt="" className='img-inicio'/>
                     </Box>
                     <Box className='paddingTop2'>
-                        <Typography variant='h6' color='textPrimary' component='h3' align='center' style={{color: "#4A2B87"}}>Aqui uma frase de efeito muito legal</Typography>
-                        <Typography variant='h6' color='textPrimary' component='h3' align='center' style={{color: "#4A2B87"}}>sobre mulheres e tecnologia!</Typography>
+                        <Typography variant='h6' color='textPrimary' component='h3' align='center' className='texto-inicio' style={{color: "#FFFFFF"}}>Aqui uma frase de efeito muito legal</Typography>
+                        <Typography variant='h6' color='textPrimary' component='h3' align='center' className='texto-inicio' style={{color: "#FFFFFF"}}>sobre mulheres e tecnologia!</Typography>
                     </Box>
                 </Grid>
                 <Grid container className='caixa2'> 
@@ -64,7 +64,7 @@ function Inicio() {
                     <Box display="flex" flexDirection="row" justifyContent="space-between" paddingX='30px' className="caixa4">
                         <Box className='flex-equipe'>
                             <Typography variant='body1' align='center' className='nome'>Augusto Alves</Typography>
-                            <img src={require('../../assets/img/lara.jpeg')} alt="" className='foto-equipe'/>
+                            <img src={require('../../assets/img/augusto.jpeg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedor FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
                             <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
@@ -80,7 +80,7 @@ function Inicio() {
                         </Box>
                         <Box className='flex-equipe'>
                             <Typography variant='body1' align='center' className='nome'>Fiama Vidal</Typography>
-                            <img src={require('../../assets/img/lara.jpeg')} alt="" className='foto-equipe'/>
+                            <img src={require('../../assets/img/fiama.jpeg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedora FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
                             <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
@@ -96,7 +96,7 @@ function Inicio() {
                         </Box>
                         <Box className='flex-equipe'>
                             <Typography variant='body1' align='center' className='nome'>Lara Daniel</Typography>
-                            <img src={require('../../assets/img/lara.jpeg')} alt="" className='foto-equipe'/>
+                            <img src={require('../../assets/img/lara1.jpg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedora FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
                             <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
@@ -112,7 +112,7 @@ function Inicio() {
                         </Box>
                         <Box className='flex-equipe'>
                             <Typography variant='body1' align='center' className='nome'>Lucas Diniz</Typography>
-                            <img src={require('../../assets/img/lara.jpeg')} alt="" className='foto-equipe'/>
+                            <img src={require('../../assets/img/lucas.jpeg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedor FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
                             <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
@@ -128,7 +128,7 @@ function Inicio() {
                         </Box>
                         <Box className='flex-equipe'>
                             <Typography variant='body1' align='center' className='nome'>Vinicius Vinha</Typography>
-                            <img src={require('../../assets/img/lara.jpeg')} alt="" className='foto-equipe'/>
+                            <img src={require('../../assets/img/vinicius.jpeg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedor FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
                             <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal,
