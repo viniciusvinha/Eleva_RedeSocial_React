@@ -1,13 +1,32 @@
 .caixa1{
-    background-color: #EBEBEB;
+    position: relative;
     padding: 120px;
+ 
+}
+
+.caixa1::before{
+    content: "";
+    background-image: url("../../assets/img/capa9.jpeg");
+    background-size: 100% auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom:0px;
+    left: 0px;
+    opacity: 0.7;
 }
 
 .img-inicio{
-    width:30%;
+    position: relative;
+    width:35%;
     height: auto;
     display: block;
     margin: auto;
+}
+
+.texto-inicio{
+    position: relative;
+    font-weight: bold !important;
 }
 
 .paddingTop2{
@@ -48,7 +67,7 @@
     padding: 30px;
 }
 
-.caixa4{
+.equipe{
     background-color: #CB6CE6;
     padding: 20px;
 }
@@ -69,4 +88,41 @@
     display: flex; 
     align-items:center;
     margin: auto;
+}
+
+.nome{
+    font-weight: bold !important;
+    color: white;
+}
+
+.caixa4{
+    background-color: #CB6CE6;
+    width: 100%;
+}
+
+.foto-equipe{
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 10px;
+
+}
+
+.flex-equipe{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.descricao-equipe{
+    color: white;
+}
+
+.paddingTop5{
+    padding-top: 5px;
+}
+
+.icon{
+    color: white;
+    margin: 10px;
 }
