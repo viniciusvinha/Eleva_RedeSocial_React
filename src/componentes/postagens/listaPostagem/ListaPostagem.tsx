@@ -45,10 +45,10 @@ function ListaPostagem() {
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
-                <Typography color="textSecondary" gutterBottom>
+                <Typography color="textSecondary" gutterBottom style={{ color:  "#4A2B87" }}>
                   Postagens
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="subtitle1" component="h2">
                   {post.titulo}
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -62,16 +62,17 @@ function ListaPostagem() {
                 <Box display="flex" justifyContent="center" mb={1.5}>
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                    <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                    <Box mx={1} >
+                      <Button variant="contained" className="botaoAtualizar" size='small' color="primary">
                         atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
-                        deletar
+                      <Button 
+                      variant="contained" size='small'className='botaoDeletar' style={{ color: "#CB6CE6" }}>
+                       deletar
                       </Button>
                     </Box>
                   </Link>

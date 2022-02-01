@@ -70,12 +70,12 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-              <Button  variant="contained" className="marginLeft" size='large' color="primary">
+              <Button  variant="contained" className="botaoDel" size='large' color="primary">
                 Sim
               </Button>
               </Box>
               <Box>
-              <Button   variant="contained" size='large' color="secondary">
+              <Button   variant="contained" size='large' style={{ color:  "#CB6CE6" }} className='botaoNao'>
                 Não
               </Button>
               </Box>

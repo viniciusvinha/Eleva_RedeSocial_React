@@ -1,5 +1,9 @@
 .caixa{
     background-color: #4A2B87;
+    width: 100vh;
+    height: 100vh;
+    
+
 }
 
 .titulo{
@@ -15,4 +19,6 @@
 
 .postagens{
     background-color: #EBEBEB;
+    width: 100%;
 }
+
