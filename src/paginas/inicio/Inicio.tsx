@@ -2,13 +2,12 @@ import React, { useEffect } from 'react';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import './Inicio.css';
 import { useHistory } from 'react-router';
-import { useSelector } from 'react-redux';
-import { TokenState } from '../../store/tokens/tokensReducer';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Inicio() {
 
     let history = useHistory();
-    
     
 
     return (
@@ -56,12 +55,94 @@ function Inicio() {
                         <Typography variant='body2' align='center'>subtítulo do gráfico de barras muito interessante</Typography>
                     </Grid>
                 </Grid>
-                <Grid container className='caixa4'>
+                <Grid container className='equipe' xs={12}>
                     <Box className="box-equipe">
                         <Typography variant='h5' className='titulo-equipe'>Desenvolvedores</Typography>
                         <img src={require('../../assets/img/logo-equipe.png')} alt="" className='logo-equipe'/>
                     </Box>
                 </Grid>
+                    <Box display="flex" flexDirection="row" justifyContent="space-between" paddingX='30px' className="caixa4">
+                        <Box className='flex-equipe'>
+                            <Typography variant='body1' align='center' className='nome'>Augusto Alves</Typography>
+                            <img src={require('../../assets/img/lara.jpeg')} alt="" className='foto-equipe'/>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedor FullStack</Typography>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
+                            <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
+                            experiência, algo que gosta sei lá Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                                <Box>
+                                    <a href="" target="_blank">
+                                        <LinkedInIcon className="icon"/>
+                                    </a>
+                                    <a href="https://github.com/augustoalvesper" target="_blank">
+                                        <GitHubIcon className="icon"/>
+                                    </a>
+                                </Box>
+                        </Box>
+                        <Box className='flex-equipe'>
+                            <Typography variant='body1' align='center' className='nome'>Fiama Vidal</Typography>
+                            <img src={require('../../assets/img/lara.jpeg')} alt="" className='foto-equipe'/>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedora FullStack</Typography>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
+                            <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
+                            experiência, algo que gosta sei lá Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                            <Box>
+                                <a href="https://www.linkedin.com/in/fiama-vidal-b31692138/" target="_blank">
+                                    <LinkedInIcon className="icon"/>
+                                </a>
+                                <a href="https://github.com/Fividal1" target="_blank">
+                                    <GitHubIcon className="icon"/>
+                                </a>
+                            </Box>
+                        </Box>
+                        <Box className='flex-equipe'>
+                            <Typography variant='body1' align='center' className='nome'>Lara Daniel</Typography>
+                            <img src={require('../../assets/img/lara.jpeg')} alt="" className='foto-equipe'/>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedora FullStack</Typography>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
+                            <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
+                             experiência, algo que gosta sei lá Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                             <Box>
+                                <a href="https://www.linkedin.com/in/laradaniel1/" target="_blank">
+                                    <LinkedInIcon className="icon"/>
+                                </a>
+                                <a href="https://github.com/laradaniel" target="_blank">
+                                    <GitHubIcon className="icon"/>
+                                </a>
+                            </Box>
+                        </Box>
+                        <Box className='flex-equipe'>
+                            <Typography variant='body1' align='center' className='nome'>Lucas Diniz</Typography>
+                            <img src={require('../../assets/img/lara.jpeg')} alt="" className='foto-equipe'/>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedor FullStack</Typography>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
+                            <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
+                            experiência, algo que gosta sei lá. Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                            <Box>
+                                <a href="https://www.linkedin.com/in/lucas-diniz-7ab5aa149/" target="_blank">
+                                    <LinkedInIcon className="icon"/>
+                                </a>
+                                <a href="https://github.com/LucasCdiniz" target="_blank">
+                                    <GitHubIcon className="icon"/>
+                                </a>
+                            </Box>
+                        </Box>
+                        <Box className='flex-equipe'>
+                            <Typography variant='body1' align='center' className='nome'>Vinicius Vinha</Typography>
+                            <img src={require('../../assets/img/lara.jpeg')} alt="" className='foto-equipe'/>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedor FullStack</Typography>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
+                            <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal,
+                            formação, experiência, algo que gosta sei lá. Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                            <Box>
+                                <a href="https://www.linkedin.com/in/vinicius-vinha/" target="_blank">
+                                    <LinkedInIcon className="icon"/>
+                                </a>
+                                <a href="https://github.com/viniciusvinha" target="_blank">
+                                    <GitHubIcon className="icon"/>
+                                </a>
+                            </Box>
+                        </Box>
+                    </Box>
             </Grid>
         </>
     );

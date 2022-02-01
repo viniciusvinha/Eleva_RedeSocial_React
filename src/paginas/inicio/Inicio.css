@@ -48,7 +48,7 @@
     padding: 30px;
 }
 
-.caixa4{
+.equipe{
     background-color: #CB6CE6;
     padding: 20px;
 }
@@ -69,4 +69,41 @@
     display: flex; 
     align-items:center;
     margin: auto;
+}
+
+.nome{
+    font-weight: bold !important;
+    color: white;
+}
+
+.caixa4{
+    background-color: #CB6CE6;
+    width: 100%;
+}
+
+.foto-equipe{
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 10px;
+
+}
+
+.flex-equipe{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.descricao-equipe{
+    color: white;
+}
+
+.paddingTop5{
+    padding-top: 5px;
+}
+
+.icon{
+    color: white;
+    margin: 10px;
 }
