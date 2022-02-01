@@ -39,29 +39,29 @@ function NavbarInicio() {
         navbarinicioComponent = <AppBar position="static" style={{ backgroundColor: "#EBEBEB" }}>
             <Toolbar variant="dense">
                 <Box className='cursor'>
-                    <img src={require('../../../assets/img/icone-eleva (3).png')} alt="" width="60px" height="60px" margin-right="10px" />
+                    <img src={require('../../../assets/img/icone-eleva (3).png')} alt="" width="50px" height="50px" margin-right="10px" />
                 </Box>
 
 
                 <Box width="100%" display="flex" justifyContent="space-between">
-                    <Box display="flex">
+                    <Box display="flex" paddingX={5}>
                         <Link to="/inicio" className="text-decorator-none style2">
-                            <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{backgroundColor: " #EBEBEB", color:'#4A2B87'}}>
+                            <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ backgroundColor: " #EBEBEB", color: '#4A2B87' }}>
                                 <Typography variant="h6" color="inherit">
                                     Inicio
                                 </Typography>
                             </Box>
                         </Link>
-                        
+
                         <Link to="/sobre" className="text-decorator-none style3" >
-                            <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{backgroundColor: " #EBEBEB", color:'#4A2B87'}}>
+                            <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ backgroundColor: " #EBEBEB", color: '#4A2B87' }}>
                                 <Typography variant="h6" >
                                     Sobre
                                 </Typography>
                             </Box>
                         </Link>
                         <Link to="/equipe" className="text-decorator-none style3" >
-                            <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{backgroundColor: " #EBEBEB", color:'#4A2B87'}}>
+                            <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ backgroundColor: " #EBEBEB", color: '#4A2B87' }}>
                                 <Typography variant="h6" color="inherit">
                                     Equipe
                                 </Typography>
@@ -69,7 +69,7 @@ function NavbarInicio() {
                         </Link>
 
                         <Link to="/contato" className="text-decorator-none style3" >
-                            <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{backgroundColor: " #EBEBEB", color:'#4A2B87'}}>
+                            <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ backgroundColor: " #EBEBEB", color: '#4A2B87' }}>
                                 <Typography variant="h6" color="inherit">
                                     Contato
                                 </Typography>
@@ -77,27 +77,30 @@ function NavbarInicio() {
                         </Link>
 
                     </Box>
+                    <Box display="flex" justifyContent='flex-end'>
 
-                    <Box mx={1} className='cursor' onClick={goLogin}>
 
-                        <Button type='submit' variant="contained" className= 'botaoentrar' style={{ backgroundColor: " #EBEBEB", color: '#4A2B87' }} >
+                        <Box mx={1} className='cursor' onClick={goLogin}>
 
-                            Entrar
-                        </Button>
+                            <Button type='submit' variant="contained" className='botaoentrar' style={{ backgroundColor: " #EBEBEB", color: '#4A2B87', borderRadius: '15px' }} >
 
-                        
+                                Entrar
+                            </Button>
+
+
+                        </Box>
+
+                        <Box mx={1} className='cursor' onClick={goLogon}>
+
+                            <Button className='botaocadastro' type='submit' variant="contained" style={{ backgroundColor: "#EBEBEB", color: '#4A2B87', borderRadius: '15px' }} >
+
+                                Cadastrar
+                            </Button>
+
+                        </Box>
+                        </Box>
                     </Box>
-
-                    <Box mx={1} className='cursor' onClick={goLogon}>
-
-                        <Button className= 'botaocadastro' type='submit' variant="contained" style={{ backgroundColor: "#EBEBEB", color: '#4A2B87' }} >
-
-                            Cadastrar
-                        </Button>
-
-                    </Box>
-
-                </Box>
+                    
 
             </Toolbar>
         </AppBar>

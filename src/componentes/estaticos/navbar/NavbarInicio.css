@@ -13,7 +13,6 @@
     position: absolute;
     width: 100px;
     height: 32px;
-    right: 15px;
     background: #110514;
     border-radius: 15px;
 }
@@ -23,7 +22,6 @@
     position: absolute;
     width: 100px;
     height: 32px;
-    left: 250px;
     background:#110514;
     border-radius: 15px;
 }
@@ -32,7 +30,6 @@
     color:black;
     width: 100px;
     height: 30px;
-    margin-left: 30px;
     border-radius: 15px;
 }
 
@@ -40,8 +37,6 @@
     color:black;
     width: 100px;
     height: 30px;
-    margin-right: 5px;
-    margin-left: 10px;
     border-radius: 15px;
 }
 
