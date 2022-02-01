@@ -59,9 +59,9 @@ function ModalPostagem () {
   return (
     <div>
       <Button
+        style={{ color: "#EBEBEB" }}
         variant="outlined"
-        className="btnModal"
-        style={{ backgroundColor: "#EBEBEB" }}
+        className="btnModal"        
         onClick={handleOpen}>Nova Postagem</Button>
       <Modal
         open={open}

@@ -1,3 +1,12 @@
 .text-decorator-none{
     text-decoration: none;
 }
+.botaoDeletar{
+    border-color: #EBEBEB!important;
+    background-color: #EBEBEB!important;
+  
+}
+.botaoAtualizar{
+    border-color: #EBEBEB!important;
+    background-color: #EBEBEB !important;
+}

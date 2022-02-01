@@ -115,11 +115,11 @@ function CadastroTema() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
-                <TextField value={tema.tituloTema} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="tituloTema" label="titulo" variant="outlined" name="tituloTema" margin="normal" fullWidth />
-                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <TextField value={tema.palavraChave} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="palavraChave" label="palavra-chave" variant="outlined" name="palavraChave" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" color="primary">
+                <Typography style={{ color:  "#4A2B87" }} variant="h5" color="textSecondary" component="h1" align="center" >Qual o tema?</Typography>
+                <TextField style={{ color:  "#4A2B87" }} value={tema.tituloTema} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="tituloTema" label="titulo" variant="outlined" name="tituloTema" margin="normal" fullWidth />
+                <TextField style={{ color:  "#4A2B87" }} value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
+                <TextField style={{ color:  "#4A2B87" }} value={tema.palavraChave} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="palavraChave" label="palavra-chave" variant="outlined" name="palavraChave" margin="normal" fullWidth />
+                <Button type="submit" variant="contained"  style={{ color:  "#EBEBEB" }} className="botaoFinalizar">
                     Finalizar
                 </Button>
             </form>
