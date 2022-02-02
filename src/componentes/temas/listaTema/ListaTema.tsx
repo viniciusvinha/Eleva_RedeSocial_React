@@ -80,7 +80,7 @@ function ListaTema() {
                     deletar
                   </Button>
                 </Box>
-              </Link>
+              </Link>yarn start
             </Box>
           </CardActions>
         </Card>
