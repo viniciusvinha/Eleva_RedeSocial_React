@@ -28,10 +28,10 @@ function Inicio() {
                                 <img src={require('../../assets/img/logo (3).png')} alt="" className='logo-sobre' />
                             </Box>
                             <Box className='texto-sobre1'>
-                                <Typography variant='h3'>Comunidade para mulheres compartilharem dúvidas, experiências e dicas!</Typography>
+                                <Typography variant='h5'>A rede social ELEVA é uma iniciativa dos estudantes do bootcamp da Generation, desenvolvida exclusivamente para mulheres e que têm como objetivo o fortalecimento, o compartilhamento de experiências e informações, a conexão ao mercado de trabalho através de divulgações e a valorização da mulher no mercado tecnológico.</Typography>
                             </Box>
                             <Box className='texto-sobre1'>
-                                <Typography variant='body1'>"Neque porro , consectetur, adipisci velishaust, laheuiro..."</Typography>
+                                <Typography variant='subtitle2'>"Precisamos nos esforçar para "erguer-nos enquanto subimos". Em outras palavras, devemos subir de modo a garantir que todas as nossas irmãs, irmãos, subam conosco." - Angela Davis</Typography>
                             </Box>
                     </Grid>
                     <Grid item xs={6}>
@@ -41,18 +41,21 @@ function Inicio() {
 
                 <Grid container className='caixa3'>
                     <Grid item xs={4} className='padding'>
-                        <Typography variant='h5' gutterBottom className='titulo-sobre'>Sobre a ODS 5</Typography>
-                        <Typography variant='body1' className='paddingTop2'>Dados relevantes sobre mulheres ocupando vagas como devs. Dados ocupando vagas como desenvolvedoras.</Typography>
-                        <Typography variant='body1' className='paddingTop2'>Importância de incentivar a aprenderem sobre programação e ocuparem estes espaços. importância de incentivar a aprenderem sobre programação e ocuparem estes espaços.</Typography>
-                        <Typography variant='body1' className='paddingTop2'>Importância de incentivar a aprenderem sobre programação e ocuparem estes espaços. importância de incentivar a aprenderem sobre programação e ocuparem estes espaços.</Typography>
+                        <Typography variant='h5' gutterBottom className='titulo-sobre'>Lugar de mulher é na Tech!</Typography>
+                        <Typography variant='body1' className='paddingTop2 fonte'>As estáticas atuais da mulher no mercado de trabalho apontam que a participação feminina na área de tecnologia cresceu 60% nos últimos 5 anos, de acordo com o CAGED. </Typography>
+                        <Typography variant='body1' className='paddingTop2 fonte'>Se a mudança continuar nesse ritmo, o Instituto de Pesquisa Econômica Aplicada (Ipea) acredita que, em dez anos, a participação das mulheres no mercado de trabalho brasileiro deve crescer mais do que a masculina em muitos segmentos — a ciência e a tecnologia são alguns deles.</Typography>
+                        <Typography variant='body1' className='paddingTop2 fonte'>Assim, é de extrema importância uma rede de compartilhamento como a Eleva, para que juntas possam alavancar esses índices. </Typography>
+                        <Typography variant='body1' className='paddingTop2 fonte'>Então, mulher, bora conquistar seu espaço, fortalecer as relações, transformar vidas e botar diversidade na Tech!</Typography>
+                    </Grid>
+                    <Grid item xs={4} className='padding' justifyContent='center'>
+                        <Typography variant='subtitle2' align='center' className='titulo-sobre'>Índices do CAGED sobre o crescimento da participação das mulheres na tecnologia.</Typography>
+                        <img src={require('../../assets/img/IBGE.jpg')} alt="" className='grafico2' />
+                        
                     </Grid>
                     <Grid item xs={4} className='padding'>
-                        <Typography variant='subtitle2' align='center' className='titulo-sobre'>Título do Gráfico</Typography>
-                        <Typography variant='body2' align='center'>subtítulo do gráfico de pizza muito interessante</Typography>
-                    </Grid>
-                    <Grid item xs={4} className='padding'>
-                        <Typography variant='subtitle2' align='center' className='titulo-sobre'>Título do Gráfico</Typography>
-                        <Typography variant='body2' align='center'>subtítulo do gráfico de barras muito interessante</Typography>
+                        <Typography variant='subtitle2' align='center' className='titulo-sobre'>Estatísticas do IBGE de mulheres na tecnologia no ano de 2018</Typography>
+                        <img src={require('../../assets/img/grafico2.jpeg')} alt="" className='grafico1' />
+                        
                     </Grid>
                 </Grid>
                 <Grid container className='equipe' xs={12}>
@@ -100,8 +103,8 @@ function Inicio() {
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedora FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
                             <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
-                             experiência, algo que gosta sei lá Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
-                             <Box>
+                            experiência, algo que gosta sei lá Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                            <Box>
                                 <a href="https://www.linkedin.com/in/laradaniel1/" target="_blank">
                                     <LinkedInIcon className="icon"/>
                                 </a>
