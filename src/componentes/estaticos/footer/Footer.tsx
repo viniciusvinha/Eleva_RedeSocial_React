@@ -2,19 +2,13 @@ import React from 'react';
 import {Typography, Box, Grid } from '@material-ui/core';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import './Footer.css';
-import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+
 
 function Footer() {
 
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-    );
-
-    var footerComponent;
-    
-    if(token != ""){
-        footerComponent = <Grid container direction="row" spacing={2} className='footer'>
+    return (
+        <>
+        <Grid container direction="row" spacing={2} className='footer'>
         <Grid alignItems="center" item xs={3}>
             <Box paddingLeft={13} paddingTop={4}>
                 <img src={require('../../../assets/img/Logo Completo (6).png')} alt="" width="40%" height="auto"/>
@@ -45,10 +39,6 @@ function Footer() {
             </Box>
         </Grid>
     </Grid>
-    }
-    return (
-        <>
-            {footerComponent}
         </>
     )
 }
