@@ -88,14 +88,14 @@ function DeletarTema() {
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
 
-                <Button onClick={sim}  variant="contained" className="marginLeft" size='large' color="primary" style={{ color:  "#4A2B87" }}>
+                <Button onClick={sim}  variant="contained" size='large' className="botaoSim">
 
                   Sim
                 </Button>
               </Box>
               <Box mx={2}>
 
-                <Button onClick={nao}  variant="contained" size='large' color="secondary" style={{ color:  "#4A2B87" }}>
+                <Button onClick={nao}  variant="contained" size='large' className='botaoNao'>
 
                   Não
                 </Button>
