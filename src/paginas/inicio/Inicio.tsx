@@ -103,8 +103,8 @@ function Inicio() {
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedora FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
                             <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
-                             experiência, algo que gosta sei lá Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
-                             <Box>
+                            experiência, algo que gosta sei lá Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                            <Box>
                                 <a href="https://www.linkedin.com/in/laradaniel1/" target="_blank">
                                     <LinkedInIcon className="icon"/>
                                 </a>
