@@ -1,7 +1,6 @@
 .caixa{
     background-color: #4A2B87;
-    width: 100vh;
-    height: 100vh;
+    padding: 50px;
     
 
 }
@@ -20,5 +19,9 @@
 .postagens{
     background-color: #EBEBEB;
     width: 100%;
+}
+
+.bordaperfil{
+    border-radius: 50%;
 }
 
