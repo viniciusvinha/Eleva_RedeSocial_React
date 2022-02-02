@@ -46,7 +46,7 @@ function NavbarInicio() {
                 <Box width="100%" display="flex" justifyContent="space-between">
                     <Box display="flex" paddingX={5}>
                         <Link to="/inicio" className="text-decorator-none style2">
-                            <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ backgroundColor: " #EBEBEB", color: '#4A2B87' }}>
+                            <Box mx={1} className='cursor font-link' width="100%" display="flex" justifyContent="space-between" style={{ backgroundColor: " #EBEBEB", color: '#4A2B87' }}>
                                 <Typography variant="h6" color="inherit">
                                     Inicio
                                 </Typography>
