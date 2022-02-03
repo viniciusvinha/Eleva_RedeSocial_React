@@ -18,8 +18,8 @@ function Inicio() {
                         <img src={require('../../assets/img/Logo Completo (5).png')} alt="" className='img-inicio'/>
                     </Box>
                     <Box className='paddingTop2'>
-                        <Typography variant='h6' color='textPrimary' component='h3' align='center' className='texto-inicio' style={{color: "#FFFFFF"}}>Aqui uma frase de efeito muito legal</Typography>
-                        <Typography variant='h6' color='textPrimary' component='h3' align='center' className='texto-inicio' style={{color: "#FFFFFF"}}>sobre mulheres e tecnologia!</Typography>
+                        <Typography variant='h6' color='textPrimary' component='h3' align='center' className='texto-inicio' style={{color: "#FFFFFF"}}>A comunidade que conecta mulheres,</Typography>
+                        <Typography variant='h6' color='textPrimary' component='h3' align='center' className='texto-inicio' style={{color: "#FFFFFF"}}> informação e tecnologia!</Typography>
                     </Box>
                 </Grid>
                 <Grid container className='caixa2'> 
@@ -70,8 +70,9 @@ function Inicio() {
                             <img src={require('../../assets/img/augusto.jpeg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedor FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
-                            <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
-                            experiência, algo que gosta sei lá Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                            <Typography variant='body2'  className='descricao-equipe paddingTop5 paddingY'>Desde o menino curioso, ao adulto que ama aprender coisas novas e ama a evolução 
+                            das coisas. "Só sei que nada sei" é a frase que mais me define. Minha principal competência é a comunicação e a mentalidade de crescimento é o meu combustível.
+                            </Typography>
                                 <Box>
                                     <a href="" target="_blank">
                                         <LinkedInIcon className="icon"/>
@@ -86,8 +87,9 @@ function Inicio() {
                             <img src={require('../../assets/img/fiama.jpeg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedora FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
-                            <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
-                            experiência, algo que gosta sei lá Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                            <Typography variant='body2' className='descricao-equipe paddingTop5 paddingY'>Oie! Sou Fiama, tenho 29 anos de idade, além de Dev. também sou advogada, nascida e 
+                            criada na região periférica de São Paulo. Minha paixão pela tecnologia veio quando tive que aprofundar meus conhecimentos em tecnologia para um TCC na Usp; a partir
+                             dali, não parei mais, também amo desafios e, por isso, também, eu e a tech demos match.</Typography>
                             <Box>
                                 <a href="https://www.linkedin.com/in/fiama-vidal-b31692138/" target="_blank">
                                     <LinkedInIcon className="icon"/>
@@ -102,8 +104,10 @@ function Inicio() {
                             <img src={require('../../assets/img/lara1.jpg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedora FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
-                            <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
-                            experiência, algo que gosta sei lá Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                            <Typography variant='body2' className='descricao-equipe paddingTop5 paddingY'>Olá, sou a Lara, tenho 22 anos e moro na zona leste de São Paulo. 
+                            Curiosa, o desenvolvimento de software que ganhou o meu coração por ser atravessada por diversas outras áreas do conhecimento. Descobri na programação 
+                            um espaço de aprendizado constante e desafiador. Durante o Bootcamp da Generation tive meu primeiros contato com essa área e acredito na tecnologia 
+                            como solução para diversos problemas que enfrentamos hoje.</Typography>
                             <Box>
                                 <a href="https://www.linkedin.com/in/laradaniel1/" target="_blank">
                                     <LinkedInIcon className="icon"/>
@@ -118,8 +122,9 @@ function Inicio() {
                             <img src={require('../../assets/img/lucas.jpeg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedor FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
-                            <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal, formação,
-                            experiência, algo que gosta sei lá. Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                            <Typography variant='body2' className='descricao-equipe paddingTop5 paddingY'>Olá, eu sou o Lucas, sou apaixonado por vídeo games, filmes, bonecos e música. 
+                            Formado em Ciência da Computação, foi na faculdade que fui apresentado a todo este universo da tecnologia e da programação e 
+                            é com o Java que sempre tive uma enorme satisfação e engrandecimento pessoal. Que a força esteja com você!</Typography>
                             <Box>
                                 <a href="https://www.linkedin.com/in/lucas-diniz-7ab5aa149/" target="_blank">
                                     <LinkedInIcon className="icon"/>
@@ -134,8 +139,10 @@ function Inicio() {
                             <img src={require('../../assets/img/vinicius.jpeg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedor FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
-                            <Typography variant='body2' align='center' className='descricao-equipe paddingTop5'>Uma frase legal, formação, experiência, algo que gosta sei lá. Uma frase legal,
-                            formação, experiência, algo que gosta sei lá. Uma frase legal, formação, experiência, algo que gosta sei lá</Typography>
+                            <Typography variant='body2'  className='descricao-equipe paddingTop5 paddingY'>Atualmente com meus 23 anos, sempre tive em mente que a minha contribuição para o mundo 
+                            seria através da tecnologia. Bem como seu impacto e capacidade de transformação. Sou uma pessoa extremamente disposta a ajudar, 
+                            contribuir e solucionar problemas. Atualmente estudando Ciência da Computação e Dev Full Stack Java, pretendo consolidar e solidificar meus 
+                            conhecimentos, para de fato iniciar minha jornada neste mundo repleto de oportunidades.</Typography>
                             <Box>
                                 <a href="https://www.linkedin.com/in/vinicius-vinha/" target="_blank">
                                     <LinkedInIcon className="icon"/>
