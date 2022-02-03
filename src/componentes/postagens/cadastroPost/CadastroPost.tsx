@@ -45,6 +45,7 @@ function CadastroPost() {
         id: 0,
         titulo: '',
         texto: '',
+        imagem:'',
         tema: null
     })
 
@@ -138,6 +139,7 @@ function CadastroPost() {
                 <Typography style={{ color: "#4A2B87" }} variant="h5" color="textSecondary" component="h1" align="center" >Crie sua Postagem</Typography>
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
+                <TextField value={postagem.imagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="imagem" label="imagem" name="imagem" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl >
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>

@@ -1,10 +1,3 @@
-.caixa{
-    background-color: #4A2B87;
-    padding: 50px;
-    
-
-}
-
 .titulo{
    color: #4A2B87!important;
    font-weight: bold !important;
@@ -23,5 +16,24 @@
 
 .bordaperfil{
     border-radius: 50%;
+    padding: 10%;
 }
 
+.perfil{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.userlogin{
+    font-weight: bold !important;
+    color: #4A2B87 !important;
+ }
+
+ .iconemulher{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+ }

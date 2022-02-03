@@ -27,7 +27,7 @@ function ListaPostagem() {
         draggable: false,
         theme: "colored",
         progress: undefined,
-    });
+      });
       history.push("/login")
 
     }
@@ -54,10 +54,7 @@ function ListaPostagem() {
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
-                <Typography color="textSecondary" gutterBottom style={{ color:  "#4A2B87" }}>
-                  Postagens
-                </Typography>
-                <Typography variant="subtitle1" component="h2">
+                <Typography color="textSecondary" gutterBottom style={{ color: "#4A2B87" }}>
                   {post.titulo}
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -66,6 +63,7 @@ function ListaPostagem() {
                 <Typography variant="body2" component="p">
                   {post.tema?.descricao}
                 </Typography>
+                <img style={{ objectFit: 'cover', backgroundPosition: 'center', width: '100%', height: '100%', position: 'relative' }} src={`${post.imagem}`} alt="" />
               </CardContent>
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5}>
@@ -79,9 +77,9 @@ function ListaPostagem() {
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button 
-                      variant="contained" size='small'className='botaoDeletar' style={{ color: "#CB6CE6" }}>
-                       deletar
+                      <Button
+                        variant="contained" size='small' className='botaoDeletar' style={{ color: "#CB6CE6" }}>
+                        deletar
                       </Button>
                     </Box>
                   </Link>

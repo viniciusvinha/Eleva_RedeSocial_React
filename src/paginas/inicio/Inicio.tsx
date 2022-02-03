@@ -12,7 +12,7 @@ function Inicio() {
 
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center">
+            <Grid className='font-link' container direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={12} className='caixa1'>
                     <Box>
                         <img src={require('../../assets/img/Logo Completo (5).png')} alt="" className='img-inicio'/>
@@ -27,8 +27,8 @@ function Inicio() {
                             <Box>
                                 <img src={require('../../assets/img/logo (3).png')} alt="" className='logo-sobre' />
                             </Box>
-                            <Box className='texto-sobre1'>
-                                <Typography variant='h5'>A rede social ELEVA é uma iniciativa dos estudantes do bootcamp da Generation, desenvolvida exclusivamente para mulheres e que têm como objetivo o fortalecimento, o compartilhamento de experiências e informações, a conexão ao mercado de trabalho através de divulgações e a valorização da mulher no mercado tecnológico.</Typography>
+                            <Box className='texto-sobre1 '>
+                                <Typography variant='h5' className='font-link'>A rede social ELEVA é uma iniciativa dos estudantes do bootcamp da Generation, desenvolvida exclusivamente para mulheres e que têm como objetivo o fortalecimento, o compartilhamento de experiências e informações, a conexão ao mercado de trabalho através de divulgações e a valorização da mulher no mercado tecnológico.</Typography>
                             </Box>
                             <Box className='texto-sobre1'>
                                 <Typography variant='subtitle2'>"Precisamos nos esforçar para "erguer-nos enquanto subimos". Em outras palavras, devemos subir de modo a garantir que todas as nossas irmãs, irmãos, subam conosco." - Angela Davis</Typography>
@@ -41,14 +41,14 @@ function Inicio() {
 
                 <Grid container className='caixa3'>
                     <Grid item xs={4} className='padding'>
-                        <Typography variant='h5' gutterBottom className='titulo-sobre'>Lugar de mulher é na Tech!</Typography>
-                        <Typography variant='body1' className='paddingTop2 fonte'>As estáticas atuais da mulher no mercado de trabalho apontam que a participação feminina na área de tecnologia cresceu 60% nos últimos 5 anos, de acordo com o CAGED. </Typography>
-                        <Typography variant='body1' className='paddingTop2 fonte'>Se a mudança continuar nesse ritmo, o Instituto de Pesquisa Econômica Aplicada (Ipea) acredita que, em dez anos, a participação das mulheres no mercado de trabalho brasileiro deve crescer mais do que a masculina em muitos segmentos — a ciência e a tecnologia são alguns deles.</Typography>
-                        <Typography variant='body1' className='paddingTop2 fonte'>Assim, é de extrema importância uma rede de compartilhamento como a Eleva, para que juntas possam alavancar esses índices. </Typography>
+                        <Typography variant='h5' gutterBottom className='titulo-sobre font-link'>Lugar de mulher é na Tech!</Typography>
+                        <Typography variant='body1' className='paddingTop2 fonte font-link'>As estáticas atuais da mulher no mercado de trabalho apontam que a participação feminina na área de tecnologia cresceu 60% nos últimos 5 anos, de acordo com o CAGED. </Typography>
+                        <Typography variant='body1' className='paddingTop2 fonte font-link'>Se a mudança continuar nesse ritmo, o Instituto de Pesquisa Econômica Aplicada (Ipea) acredita que, em dez anos, a participação das mulheres no mercado de trabalho brasileiro deve crescer mais do que a masculina em muitos segmentos — a ciência e a tecnologia são alguns deles.</Typography>
+                        <Typography variant='body1' className='paddingTop2 fonte font-link'>Assim, é de extrema importância uma rede de compartilhamento como a Eleva, para que juntas possam alavancar esses índices. </Typography>
                         <Typography variant='body1' className='paddingTop2 fonte'>Então, mulher, bora conquistar seu espaço, fortalecer as relações, transformar vidas e botar diversidade na Tech!</Typography>
                     </Grid>
                     <Grid item xs={4} className='padding' justifyContent='center'>
-                        <Typography variant='subtitle2' align='center' className='titulo-sobre'>Índices do CAGED sobre o crescimento da participação das mulheres na tecnologia.</Typography>
+                        <Typography variant='subtitle2' align='center' className='titulo-sobre font-link'>Índices do CAGED sobre o crescimento da participação das mulheres na tecnologia.</Typography>
                         <img src={require('../../assets/img/IBGE.jpg')} alt="" className='grafico2' />
                         
                     </Grid>
