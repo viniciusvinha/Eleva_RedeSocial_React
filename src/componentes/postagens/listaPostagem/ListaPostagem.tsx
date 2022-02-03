@@ -78,7 +78,7 @@ function ListaPostagem() {
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button
-                        variant="contained" size='small' className='botaoDeletar' style={{ color: "#CB6CE6" }}>
+                        variant="contained" size='small' className='botaoDeletar' style={{ color: "#4A2B87" }}>
                         deletar
                       </Button>
                     </Box>

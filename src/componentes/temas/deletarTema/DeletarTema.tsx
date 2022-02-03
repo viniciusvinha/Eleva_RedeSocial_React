@@ -88,7 +88,7 @@ function DeletarTema() {
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
 
-                <Button onClick={sim}  variant="contained" size='large' className="botaoSim">
+                <Button onClick={sim}  variant="contained" size='large' className="botaoSim" color="primary">
                   Sim
                 </Button>
               </Box>

@@ -76,7 +76,7 @@ function ListaTema() {
               </Link>
               <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}  >
-                  <Button  variant="contained" size='small'className='botaoDeletar' style={{ color: "#CB6CE6" }} >
+                  <Button  variant="contained" size='small'className='botaoDeletar' style={{ color: "#4A2B87" }} >
                     deletar
                   </Button>
                 </Box>

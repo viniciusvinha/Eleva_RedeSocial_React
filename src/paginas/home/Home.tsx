@@ -37,10 +37,10 @@ function Home() {
     return (
         <>
             <Box sx={{ flexGrow: 1 }}>
-                <Grid container spacing={3}  >
+                <Grid style={{backgroundColor:"#EBEBEB"}} container spacing={3}  >
                     <Grid item xs={12} sm={12} md={3} >
                         <Box className='perfil' >
-                            <img className='bordaperfil' src={require('../../assets/img/perfil.png')} alt="" width="70%" height="auto" />
+                            <img className='bordaperfil' src={require('../../assets/img/Avatar.png')} alt="" width="70%" height="auto" />
                             <Typography variant='h6' gutterBottom color='textPrimary' component='h3' align='center' className='userlogin'>
                                 Eleva
                             </Typography>
@@ -56,14 +56,28 @@ function Home() {
 
                     <Grid item xs={12} sm={12} md={3}>
                         <Box className='iconemulher'>
-                            <img className='bordaperfil' src={require('../../assets/img/perfil.png')} alt="" width="50%" height="auto" />
-                            <img className='bordaperfil' src={require('../../assets/img/perfil.png')} alt="" width="50%" height="auto" />
-                            <img className='bordaperfil' src={require('../../assets/img/perfil.png')} alt="" width="50%" height="auto" />
-                            <img className='bordaperfil' src={require('../../assets/img/perfil.png')} alt="" width="50%" height="auto" />
-                            <img className='bordaperfil' src={require('../../assets/img/perfil.png')} alt="" width="50%" height="auto" />
-                            <img className='bordaperfil' src={require('../../assets/img/perfil.png')} alt="" width="50%" height="auto" />
-                            <img className='bordaperfil' src={require('../../assets/img/perfil.png')} alt="" width="50%" height="auto" />
-                            <img className='bordaperfil' src={require('../../assets/img/perfil.png')} alt="" width="50%" height="auto" />
+                        <Typography variant='h6' gutterBottom color='textPrimary' component='h3' align='center' className='userlogin'>
+                                Siga nossas Parceiras:
+                        </Typography>
+                        
+                            <a href="https://www.reprograma.com.br/" target="_blank">
+                            <img className='bordaparceiros' src={require('../../assets/img/reprogramaParceiro.png')} alt="" width="50%" height="auto" />
+                            </a>
+                            <a href="https://www.programaria.org/" target="_blank">
+                            <img className='bordaparceiros' src={require('../../assets/img/prograMaria2.png')} alt="" width="50%" height="auto" />
+                            </a>
+                            <a href="https://brazil.generation.org/" target="_blank">
+                            <img className='bordaparceiros' src={require('../../assets/img/generation.png')} alt="" width="50%" height="auto" />
+                            </a>
+                            <a href="https://elasprogramam.com.br/" target="_blank">
+                            <img className='bordaparceiros' src={require('../../assets/img/elasProgramam.png')} alt="" width="50%" height="auto" />
+                            </a>
+                            <a href="https://minasprogramam.com/" target="_blank">
+                            <img className='bordaparceiros' src={require('../../assets/img/minasProgramam.png')} alt="" width="50%" height="auto" />
+                            </a>
+                            <a href="https://infopreta.com.br/" target="_blank">
+                            <img className='bordaparceiros' src={require('../../assets/img/infoPreta.png')} alt="" width="50%" height="auto" />
+                            </a>
                         </Box>
                     </Grid>
                 </Grid>

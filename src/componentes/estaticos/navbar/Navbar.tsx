@@ -35,38 +35,32 @@ function Navbar() {
     var navbarComponent;
 
     if(token != ""){
-        navbarComponent =  <AppBar position="static" style={{ backgroundColor: "#EBEBEB" }}>
+        navbarComponent =  <AppBar position="static" style={{ backgroundColor: "#CB6CE6", padding: "10px" }}>
         <Toolbar variant="dense">
             <Box className='cursor'>
-            <img src={require('../../../assets/img/icone-eleva (2).png')} alt="" width="50px" height="50px"/>
+            <img src={require('../../../assets/img/icone-eleva (1).png')} alt="" width="50px" height="50px"/>
             </Box>
 
 
-            <Box width="100%" display="flex" justifyContent="space-between">
+            <Box width="100%" display="flex" justifyContent="space-between" alignItems="center">
                 <Box display="flex" paddingX={5}>
                 <Link to="/home" className="text-decorator-none">
-                    <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ color: '#4A2B87' }}>
+                    <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ color: '#FFFFFF' }}>
                         <Typography variant="h6" color="inherit">
                             Home
                         </Typography>
                     </Box>
                 </Link>
-                <Link to="/posts" className="text-decorator-none">
-                    <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ color: '#4A2B87' }}>
-                        <Typography variant="h6" color="inherit">
-                            Postagens
-                        </Typography>
-                    </Box>
-                </Link>
+                
                 <Link to="/temas" className="text-decorator-none">
-                    <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ color: '#4A2B87' }}>
+                    <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ color: '#FFFFFF' }}>
                         <Typography variant="h6" color="inherit">
                             Temas
                         </Typography>
                     </Box>
                 </Link>
                 <Link to="/formularioTema" className="text-decorator-none">
-                    <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ color: '#4A2B87' }}>
+                    <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ color: '#FFFFFF' }}>
                         <Typography variant="h6" color="inherit">
                             Cadastrar Tema
                         </Typography>
@@ -77,7 +71,8 @@ function Navbar() {
 
                 <Box mx={1} className='cursor' onClick={goLogout}>
 
-                    <Button type='submit' variant="contained" style={{backgroundColor: " #CB6CE6", color:'#4A2B87', borderRadius: '15px'}}>
+                    <Button type='submit' variant="contained" style={{backgroundColor: " #FFFFFF", color:'#4A2B87', borderRadius: '15px', 
+                    marginBottom: "10px"}}>
                     
                             Sair
                         </Button>
