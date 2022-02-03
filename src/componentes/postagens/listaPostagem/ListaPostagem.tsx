@@ -61,7 +61,7 @@ function ListaPostagem() {
                   {post.texto}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.tema?.descricao}
+                  {post.tema?.palavraChave}
                 </Typography>
                 <img style={{ objectFit: 'cover', backgroundPosition: 'center', width: '100%', height: '100%', position: 'relative' }} src={`${post.imagem}`} alt="" />
               </CardContent>

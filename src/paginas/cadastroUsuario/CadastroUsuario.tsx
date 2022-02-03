@@ -122,11 +122,11 @@ function CadastroUsuario() {
                 </Box>
             </Grid>
             <Grid item xs={6} className='imagem2'>
-                <Box marginLeft={23} marginTop={23}>
+                <Box marginLeft={20} marginTop={23}>
                     <img src={require('../../assets/img/Logo Completo (9).png')} alt="" width="70%" height="auto"/>
                 </Box>
-                <Typography variant='h6' gutterBottom color='textPrimary' component='h3' align='center' style={{color: "#4A2B87"}}>Aqui uma frase de efeito muito</Typography>
-                <Typography variant='h6' gutterBottom color='textPrimary' component='h3' align='center' style={{color: "#4A2B87"}}>legal sobre mulheres e tecnologia!</Typography>
+                <Typography variant='h6' color='textPrimary' component='h3' align='center' style={{color: "#4A2B87",  marginTop: "15px"}}>A comunidade que conecta mulheres, </Typography>
+                <Typography variant='h6' color='textPrimary' component='h3' align='center' style={{color: "#4A2B87"}}> informação e tecnologia!</Typography>
             </Grid>
 
 
