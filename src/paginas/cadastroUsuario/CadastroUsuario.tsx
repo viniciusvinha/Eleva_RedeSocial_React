@@ -49,20 +49,43 @@ function CadastroUsuario() {
     }
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
-        if(confirmarSenha == user.senha){
-        cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
-        toast.success('Usuario cadastrado com sucesso!', {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: false,
-            theme: "colored",
-            progress: undefined,
+        if (confirmarSenha == user.senha && user.usuario != "" && user.nome != "" && user.senha.length >= 8 && user.usuario.includes('@') && user.usuario.includes('.')) {
+            cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
+            toast.success('Usuario cadastrado com sucesso!', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
             });
-        }else{
-            toast.error('Dadis inconsistentes. Favor verificar as informações de cadastro', {
+        } else if (user.senha.length < 8) {
+            toast.error('Senha deve conter no minimo 8 caracteres.', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
+        } else if (user.usuario.includes('@') == false || user.usuario.includes('.') == false) {
+            toast.error('O usuário deve ser um email válido.', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
+        }
+        else {
+            toast.error('Dados inconsistentes. Favor verificar as informações de cadastro', {
                 position: "top-right",
                 autoClose: 3000,
                 hideProgressBar: false,
