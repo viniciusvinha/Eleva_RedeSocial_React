@@ -29,7 +29,7 @@ function Navbar() {
             theme: "colored",
             progress: undefined,
         });
-        history.push('/login')
+        history.push('/inicio')
     }
 
     var navbarComponent;
@@ -48,6 +48,14 @@ function Navbar() {
                     <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ color: '#FFFFFF' }}>
                         <Typography variant="h6" color="inherit">
                             Home
+                        </Typography>
+                    </Box>
+                </Link>
+
+                <Link to="/posts" className="text-decorator-none">
+                    <Box mx={1} className='cursor' width="100%" display="flex" justifyContent="space-between" style={{ color: '#FFFFFF' }}>
+                        <Typography variant="h6" color="inherit">
+                            Postagens
                         </Typography>
                     </Box>
                 </Link>
