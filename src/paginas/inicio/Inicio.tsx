@@ -74,7 +74,7 @@ function Inicio() {
                             das coisas. "Só sei que nada sei" é a frase que mais me define. Minha principal competência é a comunicação e a mentalidade de crescimento é o meu combustível.
                             </Typography>
                                 <Box>
-                                    <a href="" target="_blank">
+                                    <a href="https://www.linkedin.com/in/augusto-vicente-alves-a05899224/" target="_blank">
                                         <LinkedInIcon className="icon"/>
                                     </a>
                                     <a href="https://github.com/augustoalvesper" target="_blank">
