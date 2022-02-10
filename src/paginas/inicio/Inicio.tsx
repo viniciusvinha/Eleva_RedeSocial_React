@@ -104,10 +104,9 @@ function Inicio() {
                             <img src={require('../../assets/img/lara1.jpg')} alt="" className='foto-equipe'/>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Desenvolvedora FullStack</Typography>
                             <Typography variant='subtitle2' align='center' className='descricao-equipe'>Java | React</Typography>
-                            <Typography variant='body2' className='descricao-equipe paddingTop5 paddingY'>Olá, sou a Lara, tenho 22 anos e moro na zona leste de São Paulo. 
-                            Curiosa, o desenvolvimento de software que ganhou o meu coração por ser atravessada por diversas outras áreas do conhecimento. Descobri na programação 
-                            um espaço de aprendizado constante e desafiador. Durante o Bootcamp da Generation tive meu primeiros contato com essa área e acredito na tecnologia 
-                            como solução para diversos problemas que enfrentamos hoje.</Typography>
+                            <Typography variant='body2' className='descricao-equipe paddingTop5 paddingY'>Olá, sou a Lara, moro na zona leste de São Paulo. Bastante curiosa, o desenvolvimento 
+                            de software ganhou o meu coração, especialmente por ser um espaço de aprendizado constante, desafiador e conectar diversas outras áreas do conhecimento. Através do 
+                            Bootcamp da Generation tive meu primeiro contato com essa área.  Acredito na tecnologia como solução para diversos problemas que enfrentamos hoje.</Typography>
                             <Box>
                                 <a href="https://www.linkedin.com/in/laradaniel1/" target="_blank">
                                     <LinkedInIcon className="icon"/>
